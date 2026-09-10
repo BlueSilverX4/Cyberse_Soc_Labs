@@ -19,8 +19,8 @@ A comprehensive, NIST CSF-aligned Security Operations Center (SOC) lab suite ins
 ## 🚀 Pipeline Execution Sequence
 
 1. **Microsegmentation Check:**
-   ```bash
-   python3 01-link-microsegmentation/scripts/link_health_check.py
+```bash
+python3 01-link-microsegmentation/scripts/link_health_check.py
 Verify Log Integrity:
 
 Bash
@@ -38,4 +38,3 @@ Build Executive SOC Dashboard:
 
 Bash
 ./05-cyberse-soc-dashboard/scripts/generate_dashboard.sh
-
