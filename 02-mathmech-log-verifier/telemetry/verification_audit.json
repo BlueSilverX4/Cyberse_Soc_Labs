@@ -1,0 +1,54 @@
+{
+  "timestamp": 1788968534.409044,
+  "baseline_merkle_root": "0d09a3ffdffaafaa43b8e08a0be243400a92780d42254b0c70ab3ca6de412955",
+  "calculated_merkle_root": "0d09a3ffdffaafaa43b8e08a0be243400a92780d42254b0c70ab3ca6de412955",
+  "integrity_status": true,
+  "total_logs": 5,
+  "log_chain": [
+    {
+      "log": {
+        "timestamp": 1788968534.406135,
+        "src_ip": "10.0.0.5",
+        "action": "LOGIN",
+        "bytes_sent": 512
+      },
+      "hash": "ba74debe94c1addaf8b1ef03a0f83bb744a6d947af8cf857ca3797dc6feabff9"
+    },
+    {
+      "log": {
+        "timestamp": 1788968535.4061406,
+        "src_ip": "10.0.0.5",
+        "action": "GET_FILE",
+        "bytes_sent": 480
+      },
+      "hash": "4e32382c70bbac4422060e5582d68308d6b13de107bb56247f1163c3a54bc45b"
+    },
+    {
+      "log": {
+        "timestamp": 1788968536.4061453,
+        "src_ip": "10.0.0.12",
+        "action": "LOGIN",
+        "bytes_sent": 530
+      },
+      "hash": "caf51159f2a5f373b244a95e7deb6bb62c094a25c8b911b828b86009c360fac3"
+    },
+    {
+      "log": {
+        "timestamp": 1788968537.4061472,
+        "src_ip": "10.0.0.5",
+        "action": "GET_FILE",
+        "bytes_sent": 505
+      },
+      "hash": "a90c219acffa87f8c138db9541c1d2d4b175b41155faa8005dbdf4e963144529"
+    },
+    {
+      "log": {
+        "timestamp": 1788968538.4067094,
+        "src_ip": "10.0.0.5",
+        "action": "EXFIL",
+        "bytes_sent": 85000
+      },
+      "hash": "3850d7f0cbdea2caba0702cc91340ac36261dc84542afc7c7f6f60147e702f5d"
+    }
+  ]
+}

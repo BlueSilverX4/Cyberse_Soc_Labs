@@ -1,0 +1,36 @@
+version: '3.8'
+
+networks:
+  public-zone:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+  internal-zone:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.21.0.0/16
+
+services:
+  # --- LINK-1: Ingress / Router Node ---
+  link-1-base:
+    container_name: link-1-base
+    image: alpine:latest
+    command: sh -c "apk add --no-cache curl iptables iproute2 python3 && tail -f /dev/null"
+    cap_add:
+      - NET_ADMIN
+    networks:
+      public-zone:
+        ipv4_address: 172.20.0.10
+      internal-zone:
+        ipv4_address: 172.21.0.10
+
+  # --- LINK-2: Protected Internal Workload ---
+  link-2-target:
+    container_name: link-2-target
+    image: alpine:latest
+    command: sh -c "apk add --no-cache python3 && exec python3 -m http.server 8080 --bind 0.0.0.0"
+    networks:
+      internal-zone:
+        ipv4_address: 172.21.0.20

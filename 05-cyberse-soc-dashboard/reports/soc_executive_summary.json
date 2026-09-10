@@ -1,0 +1,14 @@
+{
+  "timestamp": 1789007286.634071,
+  "total_threats_contained": 6,
+  "playbooks_triggered": [
+    "PLAYBOOK-DARK",
+    "PLAYBOOK-FIRE",
+    "PLAYBOOK-WATER",
+    "PLAYBOOK-EARTH",
+    "PLAYBOOK-LIGHT",
+    "PLAYBOOK-WIND"
+  ],
+  "mean_time_to_respond_seconds": 0.42,
+  "soc_readiness_score": "98.5%"
+}

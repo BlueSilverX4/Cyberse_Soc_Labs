@@ -1,0 +1,40 @@
+{
+  "rules": [
+    {
+      "attribute": "DARK",
+      "event_type": "AUTH_FAILURE",
+      "category": "Credential/Auth Abuse",
+      "severity": "HIGH"
+    },
+    {
+      "attribute": "FIRE",
+      "event_type": "EXFIL",
+      "category": "High-Volume Data Exfiltration",
+      "severity": "CRITICAL"
+    },
+    {
+      "attribute": "WATER",
+      "event_type": "INJECTION",
+      "category": "SQLi/Command Injection",
+      "severity": "HIGH"
+    },
+    {
+      "attribute": "EARTH",
+      "event_type": "SCAN",
+      "category": "Port Scan/Reconnaissance",
+      "severity": "MEDIUM"
+    },
+    {
+      "attribute": "WIND",
+      "event_type": "FLOOD",
+      "category": "DDoS/Session Flood",
+      "severity": "HIGH"
+    },
+    {
+      "attribute": "LIGHT",
+      "event_type": "MALWARE",
+      "category": "Malware Dropper/C2 Execution",
+      "severity": "CRITICAL"
+    }
+  ]
+}

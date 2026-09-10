@@ -1,0 +1,92 @@
+{
+  "timestamp": 1788969373.1929953,
+  "total_threats": 6,
+  "attribute_summary": {
+    "DARK": 1,
+    "FIRE": 1,
+    "WATER": 1,
+    "EARTH": 1,
+    "WIND": 1,
+    "LIGHT": 1
+  },
+  "threats": [
+    {
+      "event_id": "IGN-01",
+      "src_ip": "192.168.1.50",
+      "ignister_attribute": "DARK",
+      "classification": "Credential/Auth Abuse",
+      "raw_event": {
+        "event_id": "IGN-01",
+        "timestamp": 1788969372.679253,
+        "src_ip": "192.168.1.50",
+        "type": "AUTH_FAILURE",
+        "details": "10 failed SSH logins"
+      }
+    },
+    {
+      "event_id": "IGN-02",
+      "src_ip": "10.0.4.12",
+      "ignister_attribute": "FIRE",
+      "classification": "High-Volume Data Exfiltration",
+      "raw_event": {
+        "event_id": "IGN-02",
+        "timestamp": 1788969373.6792593,
+        "src_ip": "10.0.4.12",
+        "type": "EXFIL",
+        "bytes": 250000000
+      }
+    },
+    {
+      "event_id": "IGN-03",
+      "src_ip": "172.16.0.88",
+      "ignister_attribute": "WATER",
+      "classification": "SQLi/Command Injection",
+      "raw_event": {
+        "event_id": "IGN-03",
+        "timestamp": 1788969374.6792645,
+        "src_ip": "172.16.0.88",
+        "type": "INJECTION",
+        "details": "' OR 1=1 --"
+      }
+    },
+    {
+      "event_id": "IGN-04",
+      "src_ip": "192.168.1.50",
+      "ignister_attribute": "EARTH",
+      "classification": "Port Scan/Reconnaissance",
+      "raw_event": {
+        "event_id": "IGN-04",
+        "timestamp": 1788969375.6792676,
+        "src_ip": "192.168.1.50",
+        "type": "SCAN",
+        "details": "SYN scan on 1000 ports"
+      }
+    },
+    {
+      "event_id": "IGN-05",
+      "src_ip": "10.0.4.15",
+      "ignister_attribute": "LIGHT",
+      "classification": "Malware Dropper/C2 Execution",
+      "raw_event": {
+        "event_id": "IGN-05",
+        "timestamp": 1788969376.6792696,
+        "src_ip": "10.0.4.15",
+        "type": "MALWARE",
+        "details": "Exec: reverse_shell.elf"
+      }
+    },
+    {
+      "event_id": "IGN-06",
+      "src_ip": "10.0.4.200",
+      "ignister_attribute": "WIND",
+      "classification": "DDoS/Session Flood",
+      "raw_event": {
+        "event_id": "IGN-06",
+        "timestamp": 1788969377.6792717,
+        "src_ip": "10.0.4.200",
+        "type": "FLOOD",
+        "details": "5000 SYN packets/sec"
+      }
+    }
+  ]
+}

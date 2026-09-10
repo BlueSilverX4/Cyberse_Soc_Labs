@@ -1,0 +1,40 @@
+{
+  "playbooks": [
+    {
+      "id": "PLAYBOOK-DARK",
+      "target_attribute": "DARK",
+      "name": "Auth Abuse Containment",
+      "actions": ["quarantine_ip", "revoke_sessions", "create_ticket"]
+    },
+    {
+      "id": "PLAYBOOK-FIRE",
+      "target_attribute": "FIRE",
+      "name": "Data Exfiltration Mitigation",
+      "actions": ["quarantine_ip", "create_ticket"]
+    },
+    {
+      "id": "PLAYBOOK-WATER",
+      "target_attribute": "WATER",
+      "name": "Web Injection Response",
+      "actions": ["quarantine_ip", "create_ticket"]
+    },
+    {
+      "id": "PLAYBOOK-EARTH",
+      "target_attribute": "EARTH",
+      "name": "Recon Block Workflow",
+      "actions": ["quarantine_ip", "create_ticket"]
+    },
+    {
+      "id": "PLAYBOOK-LIGHT",
+      "target_attribute": "LIGHT",
+      "name": "Malware C2 Quarantine",
+      "actions": ["quarantine_ip", "revoke_sessions", "create_ticket"]
+    },
+    {
+      "id": "PLAYBOOK-WIND",
+      "target_attribute": "WIND",
+      "name": "DDoS/Flood Suppression",
+      "actions": ["quarantine_ip", "create_ticket"]
+    }
+  ]
+}

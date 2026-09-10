@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyberse SOC Executive Dashboard</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f172a; color: #f8fafc; margin: 40px; }
+        .card { background-color: #1e293b; border-radius: 8px; padding: 24px; margin-bottom: 20px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5); }
+        h1 { color: #38bdf8; border-bottom: 2px solid #334155; padding-bottom: 10px; }
+        .metric-grid { display: flex; gap: 20px; }
+        .metric-box { background-color: #334155; padding: 15px; border-radius: 6px; flex: 1; text-align: center; }
+        .metric-value { font-size: 2em; font-weight: bold; color: #4ade80; }
+        ul { line-height: 1.8; }
+    </style>
+</head>
+<body>
+    <h1>🛡️ Cyberse SOC Executive Performance Dashboard</h1>
+    <div class="card">
+        <div class="metric-grid">
+            <div class="metric-box">
+                <div>Threats Contained</div>
+                <div class="metric-value">6</div>
+            </div>
+            <div class="metric-box">
+                <div>Mean Time to Respond (MTTR)</div>
+                <div class="metric-value">0.42s</div>
+            </div>
+            <div class="metric-box">
+                <div>SOC Readiness Score</div>
+                <div class="metric-value">98.5%</div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <h3>Triggered Playbook Audit</h3>
+        <ul>
+            <li><code>PLAYBOOK-DARK</code> - Executed and Contained</li><li><code>PLAYBOOK-FIRE</code> - Executed and Contained</li><li><code>PLAYBOOK-WATER</code> - Executed and Contained</li><li><code>PLAYBOOK-EARTH</code> - Executed and Contained</li><li><code>PLAYBOOK-LIGHT</code> - Executed and Contained</li><li><code>PLAYBOOK-WIND</code> - Executed and Contained</li>
+        </ul>
+    </div>
+</body>
+</html>

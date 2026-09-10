@@ -1,0 +1,99 @@
+{
+  "engine": "Code Talker SOAR Engine",
+  "timestamp": 1788971232.52439,
+  "total_playbooks_executed": 6,
+  "audit_log": [
+    {
+      "target_ip": "192.168.1.50",
+      "playbook": "PLAYBOOK-DARK",
+      "actions": [
+        {
+          "type": "NET_BLOCK",
+          "rule": "iptables -A INPUT -s 192.168.1.50 -j DROP"
+        },
+        {
+          "type": "AUTH_REVOKE",
+          "target": "192.168.1.50"
+        },
+        {
+          "type": "TICKET_CREATED",
+          "ticket_id": "INC-1788971232-IGN-01"
+        }
+      ]
+    },
+    {
+      "target_ip": "10.0.4.12",
+      "playbook": "PLAYBOOK-FIRE",
+      "actions": [
+        {
+          "type": "NET_BLOCK",
+          "rule": "iptables -A INPUT -s 10.0.4.12 -j DROP"
+        },
+        {
+          "type": "TICKET_CREATED",
+          "ticket_id": "INC-1788971232-IGN-02"
+        }
+      ]
+    },
+    {
+      "target_ip": "172.16.0.88",
+      "playbook": "PLAYBOOK-WATER",
+      "actions": [
+        {
+          "type": "NET_BLOCK",
+          "rule": "iptables -A INPUT -s 172.16.0.88 -j DROP"
+        },
+        {
+          "type": "TICKET_CREATED",
+          "ticket_id": "INC-1788971232-IGN-03"
+        }
+      ]
+    },
+    {
+      "target_ip": "192.168.1.50",
+      "playbook": "PLAYBOOK-EARTH",
+      "actions": [
+        {
+          "type": "NET_BLOCK",
+          "rule": "iptables -A INPUT -s 192.168.1.50 -j DROP"
+        },
+        {
+          "type": "TICKET_CREATED",
+          "ticket_id": "INC-1788971232-IGN-04"
+        }
+      ]
+    },
+    {
+      "target_ip": "10.0.4.15",
+      "playbook": "PLAYBOOK-LIGHT",
+      "actions": [
+        {
+          "type": "NET_BLOCK",
+          "rule": "iptables -A INPUT -s 10.0.4.15 -j DROP"
+        },
+        {
+          "type": "AUTH_REVOKE",
+          "target": "10.0.4.15"
+        },
+        {
+          "type": "TICKET_CREATED",
+          "ticket_id": "INC-1788971232-IGN-05"
+        }
+      ]
+    },
+    {
+      "target_ip": "10.0.4.200",
+      "playbook": "PLAYBOOK-WIND",
+      "actions": [
+        {
+          "type": "NET_BLOCK",
+          "rule": "iptables -A INPUT -s 10.0.4.200 -j DROP"
+        },
+        {
+          "type": "TICKET_CREATED",
+          "ticket_id": "INC-1788971232-IGN-06"
+        }
+      ]
+    }
+  ]
+}
