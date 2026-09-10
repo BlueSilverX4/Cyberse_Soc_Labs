@@ -39,3 +39,4 @@ Build Executive SOC Dashboard:
 Bash
 ./05-cyberse-soc-dashboard/scripts/generate_dashboard.sh
 # Cyberse_Soc_Labs
+# Cyberse_Soc_Labs
